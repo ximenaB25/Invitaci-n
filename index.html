@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUESTRA BODA - Sonia & Manuel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Parisienne&display=swap');
+        
+        body {
+            font-family: 'Marcellus', serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://allsaintsjensenbeach.org/wp-content/uploads/2024/03/Wedding-final-1024x768.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #5C4A3A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .invitation-container {
+            width: 90%;
+            max-width: 1000px;
+            display: flex;
+            background-color: rgba(255, 253, 245, 0.85);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #D4AF37;
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .right-section {
+            flex: 1;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        .floral-border {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        h1 {
+            font-family: 'Parisienne', cursive;
+            font-size: 3.5rem;
+            color: #B8860B;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+
+        .couple-names {
+            font-family: 'Parisienne', cursive;
+            font-size: 4rem;
+            color: #B8860B;
+            text-align: center;
+            margin: 30px 0;
+            line-height: 1.2;
+        }
+
+        .wedding-date {
+            font-size: 2rem;
+            color: #B8860B;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .wedding-place {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .divider {
+            width: 80%;
+            height: 1px;
+            background-color: #D4AF37;
+            margin: 20px auto;
+            opacity: 0.5;
+        }
+
+        .rsvp-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .rsvp-text {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+        }
+
+        .rsvp-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .rsvp-button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Marcellus', serif;
+            font-weight: bold;
+        }
+
+        .btn-confirm {
+            background-color: #B8860B;
+            color: white;
+        }
+
+        .btn-decline {
+            background-color: #5C4A3A;
+            color: white;
+        }
+
+        .rsvp-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .confirmation-message {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            display: none;
+            color: #B8860B;
+            font-weight: bold;
+        }
+
+        .social-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .social-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #B8860B;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            background-color: #A67C00;
+        }
+
+        .hashtag {
+            margin-top: 15px;
+            font-style: italic;
+            color: #5C4A3A;
+        }
+
+        @media (max-width: 768px) {
+            .invitation-container {
+                flex-direction: column;
+            }
+            
+            .left-section, .right-section {
+                padding: 30px;
+            }
+            
+            .couple-names {
+                font-size: 3rem;
+                margin: 20px 0;
+            }
+            
+            .wedding-date {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <div class="left-section">
+            <h1>NUESRA BODA</h1>
+            
+            <div class="divider"></div>
+            
+            <div class="wedding-date">
+                20 de Septiembre de 2025<br>
+                4:00 de la tarde
+            </div>
+            
+            <div class="wedding-place">
+                Casa Blanca<br>
+                Jiutepec, Morelos<br>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <p style="text-align: center; font-size: 1.3rem;">Su presencia es nuestro mejor regalo</p>
+        </div>
+        
+        <div class="right-section">
+            <div class="floral-border"></div>
+            
+            <div class="couple-names">
+                Sonia<br>M. P.<br>
+                &<br>
+                Manuel<br>R. E.<br>
+            </div>
+            
+            <div class="rsvp-section">
+                <p class="rsvp-text">Confirma tu asistencia antes del 1 de Noviembre</p>
+                
+                <div class="rsvp-buttons">
+                    <button class="rsvp-button btn-confirm" onclick="confirmAttendance(true)">Asistire</button>
+                    <button class="rsvp-button btn-decline" onclick="confirmAttendance(false)">No Asistire</button>
+                </div>
+                
+                <div id="confirmationMessage" class="confirmation-message"></div>
+            </div>
+            
+            <div class="social-section">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/accounts/onetap/?next=%2F" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">WS</a>
+                </div>
+                <p class="hashtag">#SoniaYManuel♥</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function confirmAttendance(attending) {
+            const message = document.getElementById('confirmationMessage');
+            message.style.display = 'block';
+            
+            if (attending) {
+                message.innerHTML = '¡Gracias por confirmar! Nos alegra contar contigo.';
+                message.style.color = '#B8860B';
+                
+                // Aquí puedes agregar código para enviar la confirmación
+                // Ejemplo con Email:
+                const email = 'tuemail@bodas.com';
+                const subject = 'Confirmación de asistencia';
+                const body = `Nombre: \nAcompañantes: \nMensaje: `;
+                window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            } else {
+                message.innerHTML = 'Agradecemos tu respuesta. Lamentamos no contar contigo.';
+                message.style.color = '#5C4A3A';
+            }
+        }
+    </script>
+</body>
+</html>
